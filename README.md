@@ -27,6 +27,7 @@ The project uses the [EfficientNetB7 model](https://keras.io/api/applications/ef
 - **Video Processing**: Analyzes video frames to determine if the video content has been manipulated.
 - **Blink Detection**: Uses eye blink analysis as an additional metric for detecting DeepFakes in videos.
 - **Django Frontend**: Provides an intuitive web interface for media upload and result display.
+As a result the model works well on GAN developed deepfakes due to the inconsistency in eyeblink patterns.
 
 ## Installation
 1. **Clone the repository:**
@@ -143,5 +144,6 @@ history = model.fit(
     callbacks=[checkpoint]
 )
 ```
-
-https://pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/
+## References
+- [Eye Detection and Bling Pattern Generation Blog](https://pyimagesearch.com/2017/04/24/eye-blink-detection-opencv-python-dlib/)
+- [Git of Dataset for Testing]((https://github.com/takhyun12/Dataset-of-Deepfakes).)
